@@ -15,7 +15,7 @@ class Player {
         this.audio.currentTime = 0;
     }
     volume(vol) {
-        if (!!vol) {
+        if (typeof vol !== "undefined") {
             if (typeof vol !== "number")
                 throw new Error("Type of vol must be number");
             else if (vol > 1 || vol < 0)

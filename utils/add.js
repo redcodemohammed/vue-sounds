@@ -13,7 +13,7 @@ export default function (audioName, url) {
         throw new Error("The name of each audio must be unique");
     }
 
-    let urlRegEx = /https?:\/\/(www\.)[-a-zA-Z0-9\@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()\@:%_\+.~#?&//=]*)/gi;
+    let urlRegEx = /https?:\/\/(www\.)?[-a-zA-Z0-9\@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()\@:%_\+.~#?&//=]*)/gi;
     if (typeof url !== "string" || url.length <= 0 || !urlRegEx.test(url)) {
         throw new Error("Invalid url");
     }
