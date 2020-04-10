@@ -12,7 +12,7 @@ export default function (audioName, url) {
     }
 
     //add it to the store:
-    this.store.dispatch("addSound", {
+    this.store.dispatch("addSounds", {
         name: audioName,
         url
     });

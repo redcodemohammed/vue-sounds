@@ -6,9 +6,7 @@ export default {
         getAllSounds(state) {
             return state.sounds;
         },
-        getSingleSound(state, name) {
-            return state.sounds.find(sound => sound.name === name);
-        }
+        getSingleSound: state => name => state.sounds.find(sound => sound.name === name)
     },
     actions: {
         addSounds({ commit }, ...sound) {
