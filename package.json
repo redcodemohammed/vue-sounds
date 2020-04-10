@@ -7,7 +7,7 @@
     "mp3"
   ],
   "homepage": "https://github.com/redcodemohammed/vue-sounds",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Vue.js plugin to play sounds.",
   "main": "vue-sounds.js",
   "repository": {
