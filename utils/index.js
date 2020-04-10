@@ -1,6 +1,7 @@
 import add from "./add";
-import getSound from "./getSound";
+import get from "./get";
 import storeModule from "./store";
+import getAll from "./getAll";
 
 class VueSounds {
     constructor(store, options) {
@@ -13,8 +14,9 @@ class VueSounds {
         store.registerModule("VueSounds", storeModule);
 
         this.store = store;
-        this.getSound = getSound;
+        this.get = get;
         this.add = add;
+        this.getAll = getAll;
 
         //add sounds to the store:
         let sounds = typeof options === "undefined" ? undefined : options.sounds;
