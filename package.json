@@ -1,0 +1,20 @@
+{
+  "name": "vue-sounds",
+  "keywords": [
+    "sounds",
+    "audio",
+    "vue",
+    "mp3"
+  ],
+  "homepage": "https://github.com/redcodemohammed/vue-sounds",
+  "version": "0.0.1",
+  "description": "A Vue.js plugin to play sounds.",
+  "main": "app.js",
+  "repository": {
+    "url": "https://github.com/redcodemohammed/vue-sounds.git",
+    "type": "git"
+  },
+  "author": "redcodemohammed <redcodemohammed@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
