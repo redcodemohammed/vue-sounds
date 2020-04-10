@@ -4,6 +4,11 @@ import storeModule from "./store";
 
 class VueSounds {
     constructor(store, options) {
+        //make sure there is a store:
+        if (typeof store !== "Store") {
+            throw new Error("Please pass a valid vuex store to the plugin.");
+        }
+
         //create a new store module:
         store.registerModule("VueSounds", storeModule);
 
